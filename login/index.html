@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>    
+ <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>J.A.R.V.I.Z. Music</title>
     <meta name="theme-color" content="rgb(255,255,255)">
+    <meta property="og:image" content="https://music.jarviz.live/assets/img/login/logo_up.webp">
+    <meta property="og:title" content="J.A.R.V.I.Z. Music">
+    <meta property="og:type" content="website">
     <meta property="og:description" content="The world of HI-RES Music
 ">
-    <meta property="og:image" content="logo_up.png">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="J.A.R.V.I.Z. Music">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/pwa/app_icon.png?h=9e723659ba1f3da515c9cf81522e16d9">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/pwa/splash_screen.png?h=9b656b16d683791ed47ca8e4d1194ab6">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -38,9 +41,9 @@
                             <div class="bs-icon-xl bs-icon-circle bs-icon-primary bs-icon my-4" style="background: #de3a3a;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
                                 </svg></div>
-                            <form class="text-center" method="post" style="width: 269.8px;">
-                                <div class="mb-3" style="border-width: 2px;border-color: #de3a3a;"><input class="form-control" type="email" name="email" placeholder="Email" style="width: 269.8px;border-width: 2px;border-color: #de3a3a;"></div>
-                                <div class="mb-3" style="border-width: 2px;border-color: #de3a3a;"><input class="form-control" type="password" name="password" placeholder="Password" style="width: 269.8px;border-width: 2px;border-color: #de3a3a;"></div>
+                            <form class="text-center" id="form" style="width: 269.8px;">
+                                <div class="mb-3" style="border-width: 2px;border-color: #de3a3a;"><input class="form-control" type="email" id="email" name="email" placeholder="Email" style="width: 269.8px;border-width: 2px;border-color: #de3a3a;"></div>
+                                <div class="mb-3" style="border-width: 2px;border-color: #de3a3a;"><input class="form-control" type="password" id="password" name="password" placeholder="Password" style="width: 269.8px;border-width: 2px;border-color: #de3a3a;"></div>
                                 <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit" style="background: #de3a3a;border-radius: 11px;border-width: 1px;border-style: none;font-weight: bold;text-align: center;">Login</button></div>
                                 <p class="text-muted" style="font-size: 13px;font-weight: bold;">Forgot your password?</p>
                             </form>
@@ -52,6 +55,9 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bs-init.js?h=ec5d4df3c798a2943b2ecbac76ebfde0"></script>
+    <script src="/assets/js/firebase/config.js?h=34098d1d45b6dee29a05458e4cbd7f18"></script>
+    <script src="/assets/js/login/index.js?h=c1e1036976680f1ff07c94cbd3303d0a"></script>
+    <script src="/assets/js/dashboard/index.js?h=6d8b33218eee17188b735b2a27e4157c"></script>
 </body>
 
 </html>
